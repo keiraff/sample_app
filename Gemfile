@@ -7,6 +7,8 @@ gem 'bootstrap-sass'
 
 gem 'rails-controller-testing'
 
+gem 'bcrypt'
+
 gem 'bootstrap', '>= 5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
