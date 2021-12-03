@@ -7,7 +7,12 @@ gem 'bootstrap-sass'
 
 gem 'rails-controller-testing'
 
+gem 'faker'
+
 gem 'bcrypt'
+
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 gem 'bootstrap', '>= 5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
