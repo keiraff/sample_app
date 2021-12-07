@@ -7,7 +7,12 @@ class UserMailer < ApplicationMailer
   #
   def account_activation(user)
     @user = user
-    mail to: user.email, subject: "Account activation"
+    mail(to: user.email, subject: "Account activation") do |format|
+      format.text(content_transfer_encoding: "7bit")
+      format.html(content_transfer_encoding: "7bit")
+    end
+
+    #mail to: user.email, subject: "Account activation"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -17,6 +22,10 @@ class UserMailer < ApplicationMailer
   #
   def password_reset(user)
     @user = user
-    mail to: user.email, subject: "Password reset"
+    mail(to: user.email, subject: "Password reset") do |format|
+      format.text(content_transfer_encoding: "7bit")
+      format.html(content_transfer_encoding: "7bit")
+    end
+    #mail to: user.email, subject: "Password reset"
   end
 end
